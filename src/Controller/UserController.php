@@ -20,16 +20,4 @@ class UserController extends AbstractController
             'error' => $error,
         ]);
     }
-
-    #[Route('/login', name: 'app_login', methods: ['POST'])]
-    public function doLogin(AuthenticationUtils $authenticationUtils): Response
-    {
-        $error = $authenticationUtils->getLastAuthenticationError();
-        $lastUsername = $authenticationUtils->getLastUsername();
-
-        return $this->render('user/login.html.twig', [
-            'last_username' => $lastUsername,
-            'error' => $error,
-        ]);
-    }
 }
