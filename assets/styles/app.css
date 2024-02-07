@@ -1,5 +1,13 @@
 body {
-    background-color: #3A9D23;
+    background-color: /*#0d7601*/ #3b8b46;
+}
+
+.titre{
+    color: #FFFFFF;
+}
+
+.navbar-font{
+    background-color: #FFFFFF;
 }
 /*body {
     background-image: url("../images/Pixel_art_terrain.jpg");
